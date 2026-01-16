@@ -1,1 +1,183 @@
-Welcome!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IHLS | International Hybrid Learning Society</title>
+    <meta name="description" content="The official website of the International Hybrid Learning Society (IHLS).">
+    <meta name="keywords" content="IHLS, IHLSociety, ICHL, ICTE, Hybrid Learning, eLearning, Education Technology">
+    <meta name="author" content="International Hybrid Learning Society (IHLS)">
+    <meta name="robots" content="index, follow">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+<body>
+
+    <!-- Section 1: Navigation -->
+    <header>
+        <nav>
+            <div class="nav-brand">IHLS</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('events')">Events</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <!-- Section 2: Logo -->
+    <section class="logo-section">
+        <div class="logo-container">
+            <img src="assets/img/ihls-logo.png" alt="IHLS Logo" class="logo-img">
+        </div>
+    </section>
+
+    <!-- Section 3: Content (Dynamic) -->
+    <main id="main-content">
+        
+        <!-- Home Page Content -->
+        <div id="home" class="page-content active">
+            <h1>Welcome to the International Hybrid Learning Society</h1>
+            <p>The International Hybrid Learning Society has the vision of developing a methodology for both teaching and learning by using a combination of traditional face-to-face classroom learning and eLearning. As technologies evolve, it is feasible for students to learn anywhere, at any time, and in any way. In particular, for underdeveloped countries, long distance learning is economical for mass education. eLearning and Hybrid Learning can extend education to many more children than before. The International Hybrid Learning Society is an academic society, and will focus on academic issues only.</p>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>(I) To provide an international forum for critical reviews and reporting on developments in the use of the Internet in general, and Hybrid Learning in particular; and
+                    <br />(II) To advance teaching and lifelong learning in school, higher, professional and vocational education.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Aims</h3>
+                    <p>(a) To share good practices in hybrid learning by organizing an annual international conference for academicians;
+                    <br />(b) To develop computer software tools which educators can apply in their hybrid learning activities;
+                    <br />(c) To distribute booklets on hybrid learning as a combination of traditional learning and eLearning to educational institutes and the public; 
+                    <br />(d) To publish an academic journal in hybrid learning;
+                    <br />(e) To seek donations and sponsorships to encourage, support or subsidize the participation of students and teachers in Hong Kong and other parts of the People's Republic of China in the annual conference, or in any other significant or worthwhile information technology activities including conferences, seminars, workshops, educational programmes; and
+                    <br />(f) To organize, produce, manage, conduct, promote and represent at any theatre, community hall, academic institution, exhibition centre or other public place, seminars, exhibitions, lectures or events of a similar nature in furtherance of the objects of the Society, as the Society may from time to time think fit.</p>
+                </div>
+            </div>
+            <br>
+            <!--<button class="btn" onclick="showPage('membership')">Join Now</button>-->
+        </div>
+
+        <!-- About Page Content -->
+        <div id="about" class="page-content">
+            <h1>Executive Committee</h1>
+            <div class="grid-container-wide">
+                <div class="card">
+                    <h3>Chairman</h3>
+                    <p>Chen Li<br />The Hong Kong Polytechnic University, Hong Kong SAR, China</p>
+                </div>
+                <div class="card">
+                    <h3>Vice-chairman</h3>
+                    <p>Lam For Kwok<br />HKCT Institute of Higher Education, Hong Kong SAR, China</p>
+                </div>
+                <div class="card">
+                    <h3>Secretary</h3>
+                    <p>Kwan Keung Ng<br />Ming-Ai (London) Institute, United Kingdom</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events Page Content -->
+        <div id="events" class="page-content">
+            <h1>Upcoming Events</h1>
+            <p>Stay updated with our latest events.</p>
+            <div class="grid-container-wide">
+                <div class="card">
+                    <h3>International Conference on Technology in Education (ICTE 2026)</h3>
+                    <p><strong>Date:</strong> TBC
+                    <br /><strong>City:</strong> TBC
+                    <br /><strong>Website:</strong> https://ihlsociety.org/icte2026</p>
+                </div>
+            </div>
+            <br />
+            <h1>Past Events</h1>
+            <p>The list of past events organised by the International Hybrid Learning Society.</p>
+            <div class="grid-container-wide">
+                <div class="card">
+                    <h3>The 1st International Conference on Hybrid Learning (ICHL 2008)</h3>
+                    <p>ICHL 2008 was held on 13 - 15 August 2008 at the City University of Hong Kong, Hong Kong. The conference proceedings was published in the <a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-540-85169-1" target="_blank">Lecture Notes in Computer Science (Volume 5169)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 2nd International Conference on Hybrid Learning (ICHL 2009)</h3>
+                    <p>ICHL 2009 was held on 25 - 27 August 2009 at the University of Macau, Macau. The conference proceedings was published in the <a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-642-03696-5" target="_blank">Lecture Notes in Computer Science (Volume 5685)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 3rd International Conference on Hybrid Learning (ICHL 2010)</h3>
+                    <p>ICHL 2010 was held on 16 - 18 August 2010 at Beijing Normal University, Beijing, China. The conference proceedings was published in the <a href="http://www.springer.com/computer/general+issues/book/978-3-642-14656-5" target="_blank">Lecture Notes in Computer Science (Volume 6248)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 4th International Conference on Hybrid Learning (ICHL 2011)</h3>
+                    <p>ICHL 2011 was held on 10 - 12 August 2011 at HKU SPACE Po Leung Kuk Community College, Hong Kong, China. The conference proceedings was published in the <a href="http://www.springer.com/computer/theoretical+computer+science/book/978-3-642-22762-2" target="_blank">Lecture Notes in Computer Science (Volume 6837)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 5th International Conference on Hybrid Learning (ICHL 2012)</h3>
+                    <p>ICHL 2012 was held on 13 - 15 August 2012 at South China Normal University, Guangzhou, Guangdong, China. The conference proceedings was published in the <a href="http://www.springer.com/computer/general+issues/book/978-3-642-32017-0" target="_blank">Lecture Notes in Computer Science (Volume 7411)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 6th International Conference on Hybrid Learning (ICHL 2013)</h3>
+                    <p>ICHL 2013 was held on 12 - 14 August 2013 at the University of Toronto, Ontario, Canada. The conference proceedings was published in the <a href="http://www.springer.com/computer/general+issues/book/978-3-642-39749-3" target="_blank">Lecture Notes in Computer Science (Volume 8038)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 7th International Conference on Hybrid Learning (ICHL 2014)</h3>
+                    <p>ICHL 2014 was held on 8 - 10 August 2014 at East China Normal University (ECNU 华东师范大学), Shanghai, China. The conference proceedings was published in the <a href="http://www.springer.com/computer/general+issues/book/978-3-319-08960-7" target="_blank">Lecture Notes in Computer Science (Volume 8595)</a> by Springer.</p>
+                </div>
+                <div class="card">
+                    <h3>The 8th International Conference on Hybrid Learning (ICHL 2015)</h3>
+                    <p>ICHL 2015 was held on 27 - 29 July 2015 at Central China Normal University (CCNU 华中师范大学), Wuhan, China.</p>
+                </div>
+                <div class="card">
+                    <h3>Collegiate Competition on Educational Technology (CCET 2016)</h3>
+                    <p>CCET 2016 was held on 11 June 2016 at The Open University of Hong Kong (OpenU 香港公開大學), HKSAR, China.</p>
+                </div>
+                <div class="card">
+                    <h3>The 2018 International Conference on Technology in Education (ICTE 2018)</h3>
+                    <p>ICTE 2018 was held on 9 - 11 January 2018 at Caritas Institute of Higher Education (CIHE), HKSAR, China.</p>
+                </div>
+                <div class="card">
+                    <h3>The 2019 International Conference on Technology in Education (ICTE 2019)</h3>
+                    <p>ICTE 2019 was held on 15 - 17 March 2019 at South China Normal University, Guangzhou, China.</p>
+                </div>
+                <div class="card">
+                    <h3>The 2020 International Conference on Technology in Education (ICTE 2020)</h3>
+                    <p>ICTE 2020 was held online on 19 - 22 August 2020, hosted by the University of Macau, Macao SAR, China.</p>
+                </div>
+                <div class="card">
+                    <h3>The 2023 International Conference on Technology in Education (ICTE 2023)</h3>
+                    <p>ICTE 2023 was held on 19 - 21 December 2023 at Kasetsart University, Bangkok, Thailand.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page Content -->
+        <div id="contact" class="page-content">
+            <h1>Contact Us</h1>
+            <p>Have questions? We'd love to hear from you.</p>
+            <div class="grid-container-wide">
+                <div class="card">
+                    <p><strong>Email: </strong>info@ihlsociety.org
+                    <br /><strong>Website: </strong>https://ihlsociety.org/
+                    <br /><strong>Address:</strong> Unit 2202, 22/F, Causeway Bay Plaza I, 489 Hennessy Road, Causeway Bay, Hong Kong SAR</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Section 4: Footer -->
+    <footer>
+        <div class="footer-content">
+            <p><a href="mailto:info@ihlsociety.org">info@ihlsociety.org</a></p>
+            <p>&copy; 2026 International Hybrid Learning Society. All rights reserved.</p>
+            <p>Unit 2202, 22/F, Causeway Bay Plaza I, 489 Hennessy Road, Causeway Bay, Hong Kong SAR</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
