@@ -1,0 +1,199 @@
+<hr>
+<style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch; 
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .logo-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .logo-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo-box h5 {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+      align-self: flex-start;
+    }
+
+    .caption {
+      margin-top: 0.8rem;
+      font-size: 0.7rem;
+      color: #666;
+      text-align: center;
+    }
+
+    /* Organizer box styles */
+    .organizer {
+      flex: 1 1 30%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .organizer a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      margin-top: 2rem;
+    }
+
+    .organizer img {
+      max-width: 140px;
+      max-height: 140px;
+      object-fit: contain;
+    }
+
+    /* Co-organizers box styles */
+    .co-organizers-box {
+      flex: 1 1 65%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .co-organizers {
+      display: flex;
+      justify-content: space-evenly; 
+      width: 90%; 
+      margin: 1rem auto; 
+      flex: 1;
+    }
+
+    .co-organizers a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      width: 30%; 
+      max-width: 180px;
+      padding: 0.5rem;
+    }
+
+    .co-organizers img {
+      width: 100%;
+      max-height: 110px;
+      object-fit: contain;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .organizer, .co-organizers-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      .co-organizers {
+        width: 95%; 
+      }
+
+      .co-organizers a {
+        width: 30%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .co-organizers {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+
+      .co-organizers a {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 1.5rem;
+      }
+    }
+</style>
+
+<div class="container">
+  <!-- Organizer -->
+  <div class="logo-box organizer">
+    <h5>Organizer:</h5>
+    <a href="http://ihlsociety.org/" target="_blank">
+      <img src="img/IHLS_outlined.gif" alt="International Hybrid Learning Society">
+      <div class="caption">International Hybrid Learning Society</div>
+    </a>
+  </div>
+
+  <!-- Co-organizers -->
+  <div class="logo-box co-organizers-box">
+    <h5>Co-organizers:</h5>
+    <div class="co-organizers">
+      <a href="https://www.szcp.edu.cn/_html/" target="_blank">
+        <img src="img/szcp_logo.png" alt="Shenzhen City Polytechnic">
+        <div class="caption">Shenzhen City Polytechnic</div>
+      </a>
+      <a href="https://www.hitsz.edu.cn" target="_blank">
+        <img src="img/HITSZ.jpg" alt="Harbin Institute of Technology, Shenzhen">
+        <div class="caption">Harbin Institute of Technology, Shenzhen</div>
+      </a>
+      <!--<a href="https://www.hkmu.edu.hk/" target="_blank">
+        <img src="img/hkmu_logo.png" alt="Hong Kong Metropolitan University">
+        <div class="caption">Hong Kong Metropolitan University</div>
+      </a>-->
+      <a href="https://www.hkct.edu.hk/en/" target="_blank">
+        <img src="img/HKCT_logo.png" alt="HKCT Institute of Higher Education">
+        <div class="caption">HKCT Institute of Higher Education</div>
+      </a>
+      <a href="http://www.idgd.org.cn/" target="_blank">
+        <img src="img/IDG.png" alt="Institute of Digital Guangdong">
+        <div class="caption">Institute of Digital Guangdong</div>
+      </a>
+      <a href="https://hksmic.org.hk/" target="_blank">
+        <img src="img/HKSMIC_logo.png" alt="Hong Kong Society for Multimedia and Image Computing">
+        <div class="caption">Hong Kong Society for Multimedia and Image Computing</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- Sponsor -->
+  <div class="col-lg-6 col-md-8 text-center">
+    <h5>Sponsor:</h5>
+      <img src="img/pei_hua.jpg" alt="Hong Kong Pei Hua Education Foundation">
+      <div class="caption">Hong Kong Pei Hua Education Foundation</div>
+  </div>
+</div>
+
+
+
+<hr />
+<div class="row p-2">
+  <h6>Disclaimer:</h6>
+  <p>
+  <small>
+  The 2025 International Conference on Technology in Education (hereinafter "ICTE2025") and the Organizing Committee (hereinafter "OC") would act only as the event host and organizer for conference administration purpose regarding the conference operation. 
+  All arrangements for travel, transportations, accommodations and services are made upon the express condition that the "ICTE2025" nor "OC" will be liable for any direct, indirect, consequential or incidental damage, injury, loss, accident, delay or irregularity of any kind occasioned by reason of any act or omission beyond its control, including, without limitation, any act of negligence or breach of contract of any third party such as an airline, cruise line, train, hotel, restaurant, ground handler, etc., who is to or does supply any goods or services regarding the participation of the conference.
+  Without limiting the foregoing, the "ICTE2025" nor "OC" will be responsible for any losses or expenses due to delay or changes in schedule, overbooking of accommodations, default of any third parties, sickness, weather, strikes, acts of God, acts of terrorism, force majeure, war, quarantine, criminal activity, or for any other cause beyond its control.
+  "ICTE2025" and "OC" reserve the rights to change the itinerary of the conference without prior notice.
+  The "ICTE2025" and "OC" may decline to accept or to retain any conference participant as conference attendee in the conference at any time.
+  </small>
+  </p>
+</div>
