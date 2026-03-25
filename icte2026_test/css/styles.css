@@ -320,6 +320,80 @@ a:hover {
   padding-left: 18px;
 }
 
+.important-dates-card {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.partner-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  padding-top: 64px;
+}
+
+.partner-group + .partner-group {
+  margin-top: 30px;
+}
+
+.partner-group h3 {
+  margin: 0 0 14px;
+  color: var(--primary-dark);
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.partner-grid-single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 420px;
+}
+
+.partner-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  min-height: 188px;
+  padding: 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--white);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.partner-tile:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  border-color: rgba(11, 61, 145, 0.3);
+  box-shadow: 0 14px 30px rgba(11, 61, 145, 0.13);
+}
+
+.partner-tile:focus-visible {
+  outline: 3px solid rgba(25, 167, 206, 0.5);
+  outline-offset: 2px;
+}
+
+.partner-tile img {
+  width: 100%;
+  height: 86px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  padding: 10px;
+}
+
+.partner-tile span {
+  font-weight: 600;
+  font-size: 0.96rem;
+  line-height: 1.45;
+}
+
 .cta-section {
   padding-top: 0;
 }
@@ -441,8 +515,13 @@ ul {
   .committee-grid,
   .footer-grid,
   .member-columns,
-  .cards-grid.small-gap {
+  .cards-grid.small-gap,
+  .partner-grid {
     grid-template-columns: 1fr;
+  }
+
+  .partner-grid-single {
+    max-width: none;
   }
 
   .cta-box {
@@ -502,5 +581,14 @@ ul {
   .committee-card,
   .mini-card {
     padding: 20px;
+  }
+
+  .partner-tile {
+    min-height: 172px;
+    padding: 16px;
+  }
+
+  .partner-tile img {
+    height: 76px;
   }
 }
