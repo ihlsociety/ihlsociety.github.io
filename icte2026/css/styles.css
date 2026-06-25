@@ -35,6 +35,14 @@ img {
   border-radius: 12px;
 }
 
+.speaker-photo {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5%;
+}
+
 a {
   color: var(--primary);
   text-decoration: none;
