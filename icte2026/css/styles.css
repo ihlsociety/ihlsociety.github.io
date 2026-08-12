@@ -333,6 +333,49 @@ a:hover {
 
 .image-card {
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.image-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+.image-card p:last-of-type {
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.cards-scroll {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.cards-scroll .image-card {
+  flex: 0 0 300px;
+  height: auto;
+  scroll-snap-align: start;
+}
+
+.cards-scroll .image-card img {
+  height: 170px;
+}
+
+@media (max-width: 640px) {
+  .cards-scroll .image-card {
+    flex-basis: 260px;
+  }
 }
 
 .text-link {
