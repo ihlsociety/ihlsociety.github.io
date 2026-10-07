@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("resize", function () {
-    if (window.innerWidth > 860) {
+    if (window.getComputedStyle(navToggle).display === "none") {
       closeNav();
     }
   });

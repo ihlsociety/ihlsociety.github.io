@@ -85,6 +85,7 @@ a:hover {
 .logo-mark {
   width: 72px;
   height: 72px;
+  flex-shrink: 0;
   border-radius: 12px;
   font-weight: 700;
   display: grid;
@@ -111,7 +112,7 @@ a:hover {
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -554,6 +555,196 @@ a:hover {
   margin-top: 14px;
 }
 
+.programme-intro h2 {
+  margin: 0 0 10px;
+  color: var(--primary-dark);
+  font-size: 2rem;
+}
+
+.programme-intro p {
+  margin: 0;
+}
+
+.programme-days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0 40px;
+}
+
+.programme-days a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-weight: 700;
+  background: var(--light);
+}
+
+.programme-days a:hover {
+  background: var(--accent);
+  text-decoration: none;
+}
+
+.programme-days span {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.programme-days a:focus-visible,
+.programme-table-wrap:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.programme-scroll-hint {
+  display: none;
+}
+
+.programme-day {
+  scroll-margin-top: 120px;
+}
+
+.programme-day + .programme-day {
+  margin-top: 48px;
+}
+
+.programme-day-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.programme-day-label {
+  padding: 6px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.programme-day-heading h2 {
+  margin: 0;
+  color: var(--primary-dark);
+  font-size: 1.5rem;
+}
+
+.programme-day-heading h2 span {
+  display: inline-block;
+  margin-left: 12px;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.programme-day-note {
+  margin: 0 0 18px;
+}
+
+.programme-table-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.programme-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  line-height: 1.5;
+}
+
+.programme-table-parallel {
+  min-width: 720px;
+}
+
+.programme-table th,
+.programme-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.programme-table th + th,
+.programme-table td {
+  border-left: 1px solid var(--border);
+}
+
+.programme-table thead th {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.programme-table th:first-child {
+  width: 170px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.programme-table tbody th {
+  font-weight: 400;
+}
+
+.programme-table td {
+  font-weight: 600;
+}
+
+.programme-table tr:last-child > * {
+  border-bottom: 0;
+}
+
+.programme-track,
+.programme-detail {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.programme-track {
+  color: var(--primary);
+}
+
+.programme-detail {
+  color: var(--muted);
+}
+
+.programme-break {
+  background: var(--light);
+}
+
+.programme-highlight,
+.programme-concurrent {
+  background: var(--accent);
+}
+
+@media (max-width: 800px) {
+  .programme-scroll-hint {
+    display: block;
+    margin: -20px 0 32px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .programme-day-heading h2 span {
+    display: block;
+    margin-left: 0;
+  }
+
+  .programme-table th,
+  .programme-table td {
+    padding: 14px 12px;
+  }
+
+  .programme-table th:first-child {
+    width: 140px;
+  }
+}
+
 .site-footer {
   background: #0f172a;
   color: #dbeafe;
@@ -602,10 +793,12 @@ ul {
     flex-direction: column;
     align-items: flex-start;
   }
+}
 
+@media (max-width: 1200px) {
   .site-nav {
     position: absolute;
-    top: 79px;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--white);
