@@ -246,6 +246,20 @@ a:hover {
   border: 1px solid rgba(255,255,255,0.45);
 }
 
+.registration-link {
+  background: var(--white);
+  color: var(--primary-dark);
+}
+
+.registration-link:hover {
+  background: var(--accent);
+}
+
+.registration-link:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 4px;
+}
+
 .page-banner {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: var(--white);
