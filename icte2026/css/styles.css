@@ -308,6 +308,18 @@ a:hover {
   gap: 16px;
 }
 
+#accommodation {
+  scroll-margin-top: 100px;
+}
+
+.hotel-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.hotel-grid a {
+  overflow-wrap: anywhere;
+}
+
 .card,
 .topic-box,
 .committee-card,
@@ -781,6 +793,7 @@ ul {
   .footer-grid,
   .member-columns,
   .cards-grid.small-gap,
+  .hotel-grid,
   .partner-grid {
     grid-template-columns: 1fr;
   }
