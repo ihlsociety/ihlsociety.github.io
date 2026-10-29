@@ -629,7 +629,8 @@ a:hover {
   display: none;
 }
 
-.programme-day {
+.programme-day,
+.keynote-speaker {
   scroll-margin-top: 120px;
 }
 
